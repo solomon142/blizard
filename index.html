@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[харстоун]</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <nav>
+            <h2>Содержание</h2>
+            <ul>
+                <li><a href="#f">Текст</a></li>
+                <li><a href="#s">Про ефекты</a></li>
+                <li><a href="#t">История создания</a></li>
+                <li><a href="#k">Мини история джайны</a></li>
+                <li><a href="#d">руины запределя</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1 id="f">Харстоун</h1>
+    <div>
+        <h2>Про разработку</h2>
+        <img id="photo" style="float: left; width: 1000px;"
+            src="https://3dnews.ru/assets/external/illustrations/2019/07/02/990049/hearthstone-saviors-of-uldum-expansion-14.jpg"
+            alt="https://3dnews.ru/assets/external/illustrations/2019/07/02/990049/hearthstone-saviors-of-uldum-expansion-14.jpg"
+            alt="картинка не загрузилась" title="лого">
+        <p class="red">
+            При разработке игры ставка была сделана на простоту и доступность игровых механик. По задумке разработчиков,
+            Hearthstone должен был стать понятен с первого взгляда даже тем, кто никогда раньше не слышал о ККИ. В целом
+            так и вышло, за счёт чего игра и обрела такую популярность. Однако некоторые описания всё-таки могут
+            запутать даже довольно опытного игрока (особенно часто это случается при анонсе карт будущих дополнений,
+            когда их ещё нельзя опробовать в деле). Здесь мы попытаемся их прояснить.
+
+            Если это возможно, все эффекты карты напрямую описываются в её тексте. Например, Лидер рейда «даёт всем
+            вашим существам +1 к атаке» — просто и понятно. Этот эффект действует и на тех существ, что уже были на
+            столе до появления Лидера рейда, и на тех, что будут призваны позже, а после смерти Лидера рейда будет с них
+            снят. Эффекты такого рода, действующие постоянно, игроки называют аурой.
+
+            Другие эффекты действуют не постоянно, а срабатывают в определённые моменты. Например, в начале или в конце
+            хода — обычно уточняется, любого (как Груул) или только вашего (как Изера). Для использования таких эффектов
+            важно понимать разницу между словами «когда» и «после того, как» в тексте карты. Возьмём для примера два
+            заклинания-секрета: Взрывная ловушка и Огненный оберег. Взрывная ловушка наносит противникам 2 единицы урона
+            сразу же, «когда вашего героя атакуют» — если у нападающего существа будет 2 или меньше единиц здоровья, то
+            оно погибнет, не успев ударить. Огненный оберег наносит 3 единицы урона — но только «после того, как»
+            существо атакует вашего героя, так что урон герой получит в любом случае.
+
+            Некоторые эффекты (чаще всего — заклинаний) требуют выбрать цель, другие определяют цель случайно или
+            действуют на всех сразу (последние называются АоЕ, от англ. Area of Effect — «область действия»). При
+            использовании в колоде карт с нацеленным эффектом важно обеспечить, чтобы подходящая цель была на столе,
+            иначе существо/оружие просто не окажет эффекта, а заклинание даже нельзя будет разыграть. Так, заклинание
+            «Казнь» за 2 кристалла маны уничтожает выбранное существо противника с неполным здоровьем — очень сильный
+            эффект для такой цены, однако Казнь кладут далеко не в каждую колоду, так как её цель ещё надо чем-то
+            поранить. Если в тексте карты используется слово «персонаж» (свой или противника), значит, эффект может быть
+            оказан как на существо, так и на героя; иначе говорится «существо» или «герой» соответственно. Возвращаясь к
+            примеру с Взрывной ловушкой и Огненным оберегом: первая наносит урон всем персонажам противника, второй —
+            только существам. Если же отдельных уточнений о цели нет, то она может быть любой. Например, Огненный шар
+            «наносит 6 единиц урона» — игрок сам выбирает, отправить его в героя противника, в его существо, в своё
+            существо или даже в своего героя.
+
+            Кроме нанесения урона, есть и другие способы избавиться от карт противника (а иногда и от своих). Есть
+            ремувалы, «уничтожающие» существо независимо от его здоровья (например, заклинание «Ликвидация»),
+            хексы/мутации, «превращающие» его в другое существо (привет, овечка!) и дискарды, «сбрасывающие» карты из
+            руки (обычно вашей). Совсем редко встречается возможность «убрать» карты, находящиеся в колоде (кроме
+            милла). Если существо, уничтоженное прямым уроном или ремувалом, при помощи некоторых карт можно воскресить,
+            а сброшенную карту — вернуть, то превращённые и убранные карты потеряны до конца игры.
+
+            Чтобы не писать на множестве карт слишком длинный текст, для некоторых механик в игре есть ключевые слова.
+            Вот их список с расшифровкой:
+
+            Провокация или таунт (Taunt) — пока на столе игрока есть хоть одно существо с таким свойством, противник не
+            может атаковать кого-то без таунта. Обычно здоровье «провокаторов» больше, чем атака, т. к. им важнее
+            выдержать больше урона, чем нанести его. Провокации не защищают от урона, наносимого эффектами, а не атакой.
+            В дополнении «Руины Запределья» появилась карта Кайн Ярость Солнца, позволяющая игроку игнорировать эффект
+            Провокации.
+            Рывок (Charge) — существа с этим свойством могут атаковать сразу после выхода на стол (другие существа
+            призываются «спящими» и могут атаковать только на следующий ход). У них, напротив, атака часто превышает
+            здоровье — ведь Лирой Дженкинс (самая популярная карта с Рывком) кидается в бой, не заботясь о своей защите!
+            Механика появилась в игре с самого начала, но в «Ведьмином лесу» разработчики официально заявили, что новых
+            карт с Рывком добавлять не будут — слишком уж часто они обеспечивали быстрым колодам победу с пустого стола.
+            Последняя на тот момент карта с Рывком вышла в «Рыцарях Ледяного Трона». В «Руинах Запределья» разработчики
+            повели себя двояко: с одной стороны, отправили в Зал Славы Лироя Дженкинса, а с другой — ввели всё того же
+            Кайна Ярость Солнца с Рывком.
+            Боевой клич (Battlecry) — такие карты оказывают дополнительный эффект при разыгрывании их из руки (если она
+            призвана на стол другим способом, клич не сработает), наподобие встроенного заклинания. Бывают как полезные
+            Боевые кличи, так и вредные — последние обычно являются компенсацией за слишком сильные для своей
+            мана-стоимости статы или эффекты. Например, тот же Лирой Боевым кличем призывает на стол противника двух
+            дракончиков 1/1, которые на следующем ходу могут убить его. Сильный Боевой клич есть у всех карт героев,
+            кроме одной (о ней — ниже). Самая популярная из всех механик.
+            Предсмертный хрип (Deathrattle) — эффект такого существа или оружия сработает, наоборот, после его
+            уничтожения. Чаще используются в колодах, ориентированных на более долгую игру, так как противнику легче
+            минимизировать ущерб от такого эффекта. Как и Боевой клич, может быть как бонусом, так и штрафом. Хорошо
+            сочетается с Провокацией.
+            Божественный щит (Divine Shield) — когда существо с таким свойством получает прямой урон (от 1 до
+            бесконечности), он полностью игнорируется, после чего Божественный щит теряется. От ремувала щит не спасёт.
+            Игроки для краткости называют его «бабл» (англ. bubble — «пузырь»).
+            Маскировка (Stealth) — существо или героя с этим свойством нельзя выбрать целью атаки/заклинания/силы героя.
+            Однако первая же совершённая им атака сразу рушит всю конспирацию. Есть вариант с фитильком, когда
+            Маскировка даётся существу только на один ход (чтобы противник не мог убить его сразу же). В «Руинах
+            Запределья» появился Акама Совершенный, обладающий постоянной Маскировкой. Не защищает от АоЕ и эффектов,
+            действующих на случайную цель.
+            Неуязвимость (Immune) — Божественный щит в режиме педаль в пол: существо/оружие/герой с таким свойством не
+            получает урона при собственной атаке, а противник не может ни атаковать его, ни наложить на него какой-либо
+            негативный эффект. Естественно, использование такого свойства строго ограничено: оно может даваться только
+            на своём ходу, только во время атаки или всего на один-два хода.
+            Яд (Poisonous) — когда существо или оружие с этим свойством наносит урон другому существу, последнее умирает
+            независимо от количества своего здоровья. Очень хорошо сочетается с АоЕ уроном. Первые такие карты появились
+            уже в Классическом наборе, но название механика получила только в «Экспедиции в Ун’Горо».
+            Неистовство ветра (Windfury) — позволяет существу (или герою, если он снаряжён оружием с таким свойством)
+            атаковать дважды за один ход. Изредка встречается Меганеистовство ветра (Mega-Windfury), позволяющее
+            атаковать аж четырежды. Поскольку статы таких существ обычно занижены, а противники постараются убрать их
+            как можно скорее, используются они редко.
+            Урон от заклинаний или СПД (Spell Damage) — пока на столе есть существо с таким свойством, ваши заклинания
+            наносят на n единиц больше урона. Чему равно n, указано в тексте карты; самый большой СПД у Малигоса — целых
+            +5. На заклинания, не наносящие прямого урона, не влияет.
+            Заморозка (Freeze) — в отличие от предыдущих, этот эффект может быть только наложен на существо другой
+            картой или силой героя. Замороженное существо не может атаковать в течение хода.
+            Немота или «сало» (Silence) — тоже накладываемый эффект. Снимает с существа все эффекты — как положительные,
+            так и отрицательные, как являющиеся изначальными свойствами этого существа, так и наложенные на него с
+            помощью других карт (за исключением ауры). Атака «засаленного» существа становится изначальной, здоровье —
+            тоже, если оно на тот момент не было ещё меньше. Чаще всего используется для дебаффа существ противника,
+            например, в агрессивные колоды часто кладут «сало», чтобы в нужный момент избавиться от вражеской
+            Провокации. Однако может стать и баффом для существ, у которых завышенные для их мана-стоимости статы
+            скомпенсированы каким-то негативным эффектом (например, Древний дозорный 4/5 за 2 без Немоты вообще не может
+            атаковать).
+            При взятии (Casts When Drawn) — заклинания с таким свойством могут замешиваться в колоду при помощи других
+            карт. При взятии из колоды такое заклинание автоматически разыгрывается, после чего игрок берёт ещё одну
+            карту. Однако если это заклинание окажется в руке (в качестве копии случайной карты из колоды), для его
+            реализации потребуется мана. Первая такая карта (Закапывающаяся мина, которую замешивал в колоду Железный
+            исполин) появилась в дополнении «Гоблины и гномы», а название механика получила в «Проекте Бумного Дня».
+            Воодушевление (Inspire) — существо оказывает дополнительный эффект каждый раз, когда игрок использует силу
+            героя. Карты с таким свойством есть в дополнении «Большой турнир»; в «Натиске драконов» появились две карты
+            с таким же свойством у Охотника, но в них не используется это ключевое слово.
+            Раскопка (Discover) — этот эффект предоставляет игроку выбор из трёх случайных карт. По умолчанию при
+            Раскопке выпадают только классовые или нейтральные карты (в отличие от других эффектов со словом
+            «случайный»), а выбранную карту игрок получает в руку, однако в обоих правилах есть исключения. Считается
+            одной из лучших механик, так как оптимально сочетает скилл стратегического выбора с элементом случайности,
+            вносящим в игру разнообразие. Впервые использована в дополнении «Лига Исследователей».
+            Начало матча (Start of Game) — легендарные существа с таким свойством оказывают сильный эффект сразу после
+            муллигана. На данный момент в игре есть лишь четыре таких карты: Принц Малчезар из «Вечеринки в Каражане»,
+            Баку Пожирательница Луны с Генном Седогривом из «Ведьминого леса» и К’Тун Расколотый из «Ярмарки безумия».
+            Нефритовый голем или джейд (Jade Golem) — существо, которое можно призвать с помощью некоторых карт. Первый
+            призванный джейд имеет статы 1/1, второй — 2/2, и так далее до максимума в 30/30. Карты, позволяющие
+            призвать Нефритовых големов, есть только в дополнении «Злачный город Прибамбасск», и то не у всех классов.
+            Адаптация (Adapt) — при использовании этого эффекта игрок раскапывает бафф, который получит адаптирующееся
+            существо. Это может быть бонус к характеристикам или какое-то дополнительное свойство, от Неистовства ветра
+            до Предсмертного хрипа, призывающего два Растения 1/1. Есть только в дополнении «Экспедиция в Ун’Горо».
+            <figure>
+            <img src="https://images.noob-club.ru/news/2017/07/fzyvy88s8q.jpg" alt="бан">
+            <figcaption>комплекты</figcaption>
+            </figure>
+            Похищение жизни (Lifesteal) — когда карта или сила героя с таким свойством наносит урон (любым способом),
+            герой восстанавливает здоровье в том же объёме. Первая такая карта, Королева Боли, появилась в дополнении
+            «Гоблины и гномы», а название и развитие механика получила в «Рыцарях Ледяного Трона».
+            Вербовка (Recruit) — призыв существа из колоды сразу на стол. Призывать существ из своей колоды умел
+            И’Шарадж из «Пробуждения Древних Богов», а из чужой, на сторону противника — Владыка Смерти из «Проклятия
+            Наксрамаса», но название и развитие механика получила только в «Кобольдах и Катакомбах». В более поздних
+            дополнениях встречается регулярно, но от ключевого слова почему-то отказались, пишут просто «призывает
+            (такое-то) существо из колоды».
+            Натиск (Rush) — альтернатива Рывку, с той разницей, что на первом ходу после призыва существо с Натиском не
+            может атаковать героя противника. Почти так же работал Заряженный дьявозавр из «Экспедиции в Ун’Горо», но
+            его неспособность сразу «ходить в лицо» обеспечивалась Боевым кличем; если он попадал на стол через ту же
+            Вербовку, Рывок работал без ограчичений. Механика Натиска была введена в дополнении «Ведьмин лес».
+            Эхо (Echo) — позволяет разыгрывать одну и ту же карту любое число раз в течение одного хода, пока хватает
+            маны (при этом дополнительные копии не сохраняют баффы, наложенные на оригинальную карту). Первой картой с
+            таким эффектом была Изменчивая эволюция из «Кобольдов и Катакомб». Большинство карт с Эхом относятся к
+            дополнению «Ведьмин лес», где механика и получила своё название. В «Возмездии Теней» так работает Ведьмино
+            варево, но слова «Эхо» в его описании нет. Разработчики сказали, что не хотели смущать новых игроков
+            незнакомым словом… а через два месяца добавили механизм КЛNК-КЛ4К с «Эхом» в тексте, объяснив это тем, что
+            имели в виду лишь игроков, которые придут после ухода «Бумного дня» в Вольный режим. Позже механика была
+            понерфлена: создаваемые Эхом дополнительные копии больше не могут стоить меньше 1 кристалла маны.
+            Магнетизм (Magnetic) — существо-механизм с таким свойством может слиться с другим вашим механизмом, стоящим
+            на столе, в результате чего все их статы и эффекты суммируются. Чтобы слияние произошло, существо с
+            Магнетизмом нужно поставить слева от нужного механизма. «Примагниченное» существо действует как
+            заклинание-бафф; его нельзя будет воскресить, а Немота практически сотрёт его без следа. Зато Магнетизм
+            выступает своеобразной заменой Рывка, ведь если на столе есть уже готовый атаковать механизм, то
+            «примагниченный» на него пойдёт в бой на этом же ходу. Существа с Магнетизмом есть только в дополнении
+            «Проект Бумного Дня».
+            Сверхурон (Overkill) — дополнительный эффект, если нанесённый картой урон превышает здоровье цели. Карты с
+            таким свойством есть только в «Растахановых Игрищах», но в других дополнениях встречаются дополнительные
+            эффекты за убийство вражеского существа. Сверхурон существа/оружия срабатывает только во время хода его
+            хозяина.
+            Дуплет (Twinspell) — эффект, похожий на Эхо: при разыгрывании такого заклинания игрок получает в руку его
+            копию, но уже без Дуплета. Схожим образом работала сила героя Валиры Иссохшей (карта героя из «Рыцарей
+            Ледяного Трона»), дающая в руку копию последней разыгранной вами карты до конца хода. Дуплет есть только в
+            «Возмездии теней» и «Пробуждении Галакронда», и только у четырёх классов.
+            Перерождение (Reborn) — после смерти существа с таким свойством оно воскресает, но уже без Перерождения и с
+            1 единицей здоровья (можно сказать, Дуплет для существ). Напоминает действие заклинаний «Искупление»
+            (Классический набор) и «До последнего вздоха» («Рыцари Ледяного Трона»). Карты с этим свойством есть только
+            в «Спасителях Ульдума» и «Пробуждении Галакронда».
+            Воззвание (Invoke) — вызывает срабатывание силы героя Галакронда, где бы он ни находился. Для использования
+            Воззвания необходимо иметь Галакронда в колоде, руке или на столе. В случае, когда Галакрондов у игрока
+            несколько (например, получены механикой воровства), Воззвание действует на классового или, если такого нет,
+            на полученного первым. После второго и четвёртого Воззваний карта героя улучшается: меняются её портрет,
+            название (в первый раз — на «Галакронд, вестник Апокалипсиса», во второй — «Галакронд, погибель Азерота») и
+            Боевой клич (каждый новый в два раза лучше старого, а в третьей форме снаряжает ещё и оружием 5/2). Механика
+            напоминает синергию К’Туна из «Пробуждения Древних Богов» и присутствует только в «Натиске драконов».
+            Спячка (Dormant) — существо, находящееся в этом состоянии, занимает место на столе, но недоступно никаким
+            воздействиям, включая массовые, пока не проснётся. Впервые механика использована в «Экспедиции в Ун’Горо»,
+            где в Спячку после смерти впадал Шеразин; условием его пробуждения был розыгрыш четырёх карт за ход. Позже
+            появлялась в «Кобольдах и Катакомбах» (Тьма) и «Возмездии теней» (Светодрев). Ключевым словом стала в
+            «Руинах Запределья», где появилось много карт, находящихся в Спячке несколько ходов или до выполнения
+            определённых условий, а также Майев Песнь Теней, которая может погрузить в Спячку другое существо на 2 хода.
+            Резонанс (Spellburst) — карта с таким свойством оказывает дополнительный эффект, когда её владелец
+            разыгрывает заклинание; срабатывает Резонанс только единожды. Похожий эффект есть у Маназмея и Любительницы
+            маны из Классического набора, однако у них он не ограничен одним срабатыванием. Карты с Резонансом есть
+            только в «Некроситете».
+            Порча/Под порчей (Corrupt/Corrupted) — карта со свойством «Порча» получает бонус к характеристикам или
+            эффекту, если пока она находилась в руке, игрок разыграл карту дороже по мане (имеется в виду реальная, а не
+            номинальная стоимость; например, карта за 12, удешевлённая до 8, не вызовет эффект Порчи у карты за 9).
+            После этого она становится картой «Под порчей», с чем связаны отдельные синергия и достижение. Большинство
+            карт с Порчей могут получить бонус лишь однажды, но есть и исключения. Сама механика напоминает
+            заклинания-Обереги из «Кобольдов и катакомб» и присутствует только в «Ярмарке безумия».
+            Некоторые эффекты доступны только определённым классам:
+            <h2 id="s">Про эффекты</h2>
+            Выбор эффекта (Choose One) — предтеча Раскопки. При разыгрывании такой карты игрок сам выбирает, какой из
+            заложенных в неё эффектов она окажет; вариантов чаще всего два. Иногда есть возможность задействовать оба
+            эффекта сразу — в таких случаях эти карты становятся невероятно мощными. Есть только у класса Друида, в
+            частности, такова его карта героя из «Рыцарей Ледяного Трона».
+            Серия приёмов (Combo) — карта оказывает дополнительный эффект, если до неё на этом ходу были разыграны
+            другие. Такие карты есть только у Разбойника.
+            Перегрузка (Overload) — карты с этим свойством обычно обладают очень сильными статами или эффектами для
+            своей мана-стоимости, но сокращают количество маны, доступной на следующий ход (можно сказать, оплачиваются
+            в рассрочку). При этом некоторые карты позволяют разблокировать перегруженные кристаллы маны. Есть только у
+            Шамана.
+            Изгой (Outcast) — свойство, дающее дополнительный эффект, если карта разыграна с крайней левой или крайней
+            правой позиции в руке. Есть только у Охотника на демонов.
+            Есть свойства и эффекты, описываемые очень длинно и присущие многим картам, для которых, тем не менее, нет
+            ключевых слов.
+
+            Не может быть целью заклинаний и силы героя — именно то, что написано на упаковке. Разработчики так и не
+            нашли достаточно короткого и при этом интуитивно понятного слова, чтобы заменить эту громоздкую конструкцию.
+            Их сложно упрекнуть: автор правки тоже не придумал варианта лучше, чем «Ненацеливаемость»[1]. В «Натиске
+            драконов» добавили ряд существ с данным свойством и эпитетом «неуловимый», что дало повод надеяться на такое
+            ключевое слово, но — нет. И не планируется.
+            Исступление (Enrage) — существо получает дополнительный эффект, если его здоровье меньше максимального.
+            Раньше было ключевым словом, но в дополнении «Ведьмин лес» его решили убрать и писать просто «такой-то
+            эффект, если у существа неполное здоровье».
+            Поединок (Joust) — при разыгрывании такой карты оба игрока показывают случайное существо из своей колоды.
+            Если существо хозяина карты с Поединком стоит больше, активируется дополнительный эффект. Для существ
+            Поединок реализуется через Боевой клич. Хотя это слово никогда не использовалось в описании, оно является
+            официальным термином для обозначения таких карт. Карты с Поединком есть только в дополнении «Большой
+            турнир».
+            Хайлендер — в этой и сопутствующих статьях для удобства будем использовать этот термин для легендарных
+            существ с Боевым кличем, работающим при условии «если в вашей колоде нет одинаковых карт». В честь первой
+            такой карты в игре, Рено Джексона, это свойство иногда называют «Рено-условием». Название «Хайлендер»
+            заимствовано из Magic: The Gathering и является отсылкой к франшизе «Горец» — здесь тоже «должен остаться
+            только один» экземпляр каждой карты. Боевой клич Хайлендер-карт, как правило, очень силён: у того же Рено
+            Джексона он полностью восстанавливает здоровье своего героя. Такие карты есть в дополнениях «Лига
+            исследователей», «Злачный город Прибамбасск»[2], «Спасители Ульдума» и «Натиск драконов».
+            Несмотря на все упрощения и ключевые слова, всё равно есть карты, из текста которых нельзя сразу понять, как
+            они действуют. Например, Изера: «в конце вашего хода вы кладёте в руку карту Сна». Этой картой Сна может
+            быть одна из пяти следующих: Изумрудный дракон 7/6 за 4; Смеющаяся сестра 3/5 за 3, которая
+            не-может-быть-целью-нувыпоняли; заклинание «Сон» за 0, возвращающее существо в руку владельца; Кошмар за 0
+            же, дающий существу +5/+5, но уничтожающий его в начале вашего следующего хода; Пробуждение Изеры за 2,
+            наносящее 5 единиц урона всем персонажам, кроме Изеры. Такие вещи проще запомнить с опытом, чем пытаться
+            как-то описать в тексте карты.
+
+            Карты Сна являются примером неколлекционных карт — таких, которые нельзя положить в колоду заранее, а можно
+            только получить с помощью других карт, как ту же Монетку. Неколлекционные существа называются токенами
+            (англ. token — «фишка»; термин заимствован опять же из MtG). Типичный токен — «питомец» (один из трёх
+            сильных зверей за 3 маны; какой именно — определяется случайно и это всегда Хаффер.).
+
+            Педаль в асфальт в плане непонятности текста давит Зефрис Великий, предлагающий «пожелать себе идеальную
+            карту». Это означает, что вы раскапываете карту из Базового или Классического набора (без ограничений по
+            классу!), которые могут помочь вам именно в данный момент игры: уничтожить существ противника, нанести
+            смертельный урон, спасти вашего героя от смерти или просто получить в чём-то преимущество. За картой стоит
+            сложный алгоритм, который серьёзно ограничивает выбор, но никто же не мешает взять с собой по карте
+            Хмелеваров (их Боевой клич возвращает ваше выбранное существо в руку) и сыграть Зефриса трижды, не так ли?
+        </p blue>
+    </div>
+    <div>
+        <h2 id="t">История создания</h2>
+        <figure>
+        <img src="data:image/jpeg;base64,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"
+            alt="вам выдан бан">
+            <figcaption>Бен Броуд</figcaption>
+            </figure>
+        <p>
+            Hearthstone (также известная как Hearthstone: Heroes of Warcraft) — коллекционная карточная онлайн-игра по
+            мотивам вселенной Warcraft, разработанная компанией Blizzard Entertainment и распространяемая по модели
+            free-to-play. Игра была выпущена для персональных компьютеров 11 марта 2014 года[3]. Позже она была
+            портирована на платформы iOS и Android[5][7]. Ведущими геймдизайнерами выступили Эрик Доддс и Бен Броуд[3].
+
+            Как и в других коллекционных карточных играх, главной целью игрока в Hearthstone является сбор собственной
+            карточной коллекции, которая пополняется путём покупок комплектов карт или получения их в качестве
+            награды[8]. Матчи между игроками сводятся к разыгрыванию карт с задачей первым свести очки здоровья
+            оппонента к нулю[9]. Выпуск новых карт проводится в виде крупных дополнений или загружаемого
+            однопользовательского режима «Приключений». Каждое новое дополнение основывается на части или отдельной
+            локации вселенной Warcraft[10].
+
+            Игра получила в целом положительные отзывы критиков, высоко оценивших простоту правил игры[11], сеттинг мира
+            Warcraft[12], аудиовизуальную проработку[13] и вариативность игрового процесса[14], что должно было
+            обеспечить приток новых игроков в жанр коллекционных карточных игр[15][16]. Hearthstone: Heroes of Warcraft
+            неоднократно награждалась премиями в различных номинациях по итогам 2014 года, в их числе «лучшая мобильная
+            игра»[17], «лучшая стратегическая игра»[18], «лучшая многопользовательская онлайн-игра»[19]. Также игра
+            является одной из ведущих киберспортивных дисциплин в своём жанре[
+        </p>
+    </div>
+
+    <div>
+        <h2 id="k">Мини история джайны</h2>
+        <figure>
+            <img src="data:image/jpeg;base64,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"
+                alt="бан">
+            <figcaption>джайна</figcaption>
+        </figure>
+        <p>
+            Hearthstone: Heroes of Warcraft представляет собой коллекционную карточную онлайн-игру, основанную на
+            пошаговой системе передаче ходов между оппонентами в течение матча с использованием предварительно
+            подготовленных колод карт[22]. В игре доступны несколько игровых режимов, отличающихся правилами проведения
+            матчей или использования колод. Как и в других играх этого жанра, в Hearthstone имеется стратегическая
+            составляющая, проявляющаяся в тактике предматчевого сбора колод и рационального использования карт в течение
+            матча, с элементом случайности, состоящем в порядке вытягивания карт из колоды и эффектах отдельных карт[8].
+            Каждый новый игрок после режима «Обучения» получает возможность бесплатно собрать базовый набор карт. В
+            дальнейшем можно получить дополнительные наборы карт путём приобретения за игровую валюту или за реальные
+            деньги по системе микротранзакций (при этом приобретаются комплекты случайных карт выбранного игроком
+            дополнения)[8].
+
+            Hearthstone не имеет общей сюжетной составляющей, и весь игровой процесс представлен матчами между двумя
+            игроками в различных игровых режимах. Перед началом матча игрок собирает колоду из 30 карт и приступает к
+            поиску противника в определённом режиме игры. После нахождения оппонента системой матчмейкинга между
+            игроками случайным образом определяется право первого хода, и каждый из игроков вытягивает, в зависимости от
+            очерёдности, по 3 или 4 карты из своей колоды. Предложенные карты игрок может в течение отведённого времени
+            сменить на произвольные другие, содержащиеся в его колоде[9]. Каждая карта в игре обладает стоимостью,
+            измеряемой в затрачиваемых на её использование «кристаллах маны» (англ. Mana crystals). Игроку, ходящему
+            вторым, предоставляется карта «Монетка», дающая на один ход дополнительный кристалл маны[9].
+
+            Игра начинается с одним кристаллом маны у каждого из игроков, количество которых увеличивается на один
+            кристалл на следующий ход вплоть до 10 кристаллов (то есть на второй ход у игрока имеется 2 кристалла маны,
+            на четвёртый — 4 и т. д.), причём использованные в предыдущий ход кристаллы полностью восполняются[9]. Число
+            карт, которые можно сыграть за один игровой ход, ограничено только суммарной стоимостью по кристаллам маны и
+            максимальным временем хода (90 секунд). Оба игрока представлены на игровом поле героями выбранных игровых
+            классов, имеющими изначально по 30 единиц здоровья и обладающими уникальными для каждого из классов «силами
+            героя» (англ. Hero power), использование которых стоит два кристалла маны (например, класс «Охотник»
+            обладает способностью «Верный выстрел», наносящей две единицы урона герою противника). Каждый ход игрок
+            вытягивает из колоды по одной карте. Единовременно в руке игрока не может находиться более десяти карт —
+            каждая следующая вытянутая карта при полной руке уничтожается[8]. Игрок может разыгрывать карты только в
+            свой ход, но эффекты отдельных карт воспроизводятся вне зависимости от очерёдности ходов оппонентов. При
+            исчерпании всех карт игрок начинает вытягивать «карты усталости» (англ. Fatigue cards), наносящие урон
+            здоровью его героя, увеличивающийся при вытягивании новой карты в арифметической прогрессии. Цель игры
+            состоит в уничтожении при помощи собственных карт героя противника (то есть доведении его очков здоровья до
+            нуля)[9]. Среднее время одного матча составляет от 10 до 15 минут[23].
+        </p>
+    </div>
+
+</body>
+
+</html>
+<h2 id="d">Руины запределя</h2>
+3. Информация о дополнении Руины Запределья
+Новый класс: охотник на демонов. Впервые в истории Hearthstone!
+Новое свойство: Изгой (только для охотника на демонов). Карты с этим свойством становятся мощнее, если разыгрывать их из
+крайней правой или левой позиции в руке.
+Новый вид существ: Совершенные. После смерти Совершенные возвращаются в колоду, чтобы повторно выйти на поле боя в
+усиленном виде.
+Новый вид существ: пленные демоны. В течение нескольких ходов после выхода на поле пленный демон находится в спячке, а
+затем пробуждается и запускает мощный эффект.
+135 новых карт, в том числе 15 классовых карт для охотника на демонов.
+За месяц до выхода нового дополнения, 17 марта 2020 года, все игроки бесплатно получат новую карту, Принца Кель'таса.
+Весь PvE-контент дополнения будет бесплатным (подробности последуют позже).
+Цитата из интервью с Дином "IksarHS" Айалой для HearthPwn:
+
+HearthPwn: Что такого особого в этом дополнении? Чем оно отличается от предыдущих?
+
+Дин: Перво-наперво, мы решили добавить в игру нового героя, и им стал Иллидан. Потом нам потребовалась локация, как-то
+связанная с Иллиданом. Локация в Hearthstone - это размытое понятие, поэтому мы взяли Запределье целиком и немного
+переделали его, чтобы оно соответствовало общему стилю. Это все еще вселенная Warcraft и то же самое Запределье, которое
+вы видели в дополнении Burning Crusade.
+<figure>
+<img src="https://static-prod.weplay.tv/2020-04-07/24b51dbeee502f46c68748c4af85aec7_large_cover.2E3B41-B0BC81-6AB19F.jpeg"
+    alt="вам выдан бан">
+    <figcaption>илидан</figcaption>
+    </figure>
+<footer>
+    Made by Соломон Ккривой &#10001;. 2021 Dnipro
+</footer>

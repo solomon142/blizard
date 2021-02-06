@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(133, 133, 246);
+}
+img{
+    border-style: solid;
+    width: 500px;
+}
+.men{    background-color: red;
+    font-size: 15px;
+}
+a{
+    color: yellow;
+    text-decoration: none;
+}
+
+#photo{
+    width: 250px;
+}
+footer{
+font-size:100px;
+}
+figcaption{
+    font-size: 50px;
+}
